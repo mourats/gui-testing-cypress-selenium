@@ -6,7 +6,7 @@ describe('cart promotions', () => {
     cy.get('.primary').click();
   });
   // Remove .only and implement others test cases!
-  it.only('increase percentage of christmas promotion', () => {
+  it('increase percentage of christmas promotion', () => {
     // Click in cart promotions in side menu
     cy.clickInFirst('a[href="/admin/promotions/"]');
     // Type in value input to search for specify cart promotion
@@ -23,12 +23,22 @@ describe('cart promotions', () => {
     // Assert that cart promotion name has been updated
     cy.get('body').should('contain', 'Promotion has been successfully updated.');
   });
-  it('test case 2', () => {
-    // Implement your test case 2 code here
-  });
-  it('test case 3', () => {
-    // Implement your test case 3 code here
-  });
 
-  // Implement the remaining test cases in a similar manner
+  it('create new promotion', () => {});
+
+  it('create new promotion cupom based', () => {});
+
+  it('filter cupom based promotions', () => {});
+
+  it('filter not cupom based promotions', () => {});
+
+  it('order promotions by priority', () => {});
+
+  it('list cupoms from cupom based promotion', () => {});
+
+  it('create new cupom for cupom based promotion', () => {});
+
+  it('generate new cupom for cupom based for cupom based promotion', () => {});
+
+  it('should create a new promotion and delete it', () => {});
 });
